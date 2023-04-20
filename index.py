@@ -1,5 +1,5 @@
 # Creator: Mega Development
-from flask import Flask, render_template, request, jsonify, redirect, url_for
+from flask import Flask, render_template, request, jsonify, redirect, url_for, Response
 import database as dbase  
 from product import Product
 

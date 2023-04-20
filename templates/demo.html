@@ -1,9 +1,18 @@
 {% extends "layout.html" %} {% block title %} Acerca De {% endblock %} {% block content%}
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">APP API-REST PYTHON - FLASK - MONGODB</h1>
+            <p class="lead fw-normal text-white-50 mb-0">La siguiente demo es un CRUD de productos</p>
+        </div>
+    </div>
+</header>
 
 <body>
 
     <div class="container">
-        <h1 class="text-center mt-5 mb-5">APP API-REST PYTHON - FLASK - MONGODB</h1>
+        <h1 class="text-center mt-5 mb-5"></h1>
     </div>
 
     <div class="container">
@@ -11,7 +20,7 @@
             <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="text-center">Alta producto</h5>
+                        <h5 class="text-center">Nuevos productos</h5>
                     </div>
                     <div class="card-body">
                         <form action="/products" method="POST">
