@@ -12,9 +12,9 @@ try:
         serverSelectionTimeoutMS=1000
     )
     db = mongo.food
-    mongo.server_info()  # trigger exception if cannot connect to db
+    mongo.server_info()  # Excepción desencadenada si no se puede conectar a la BD
 except:
-    print("ERROR - cannot connect to db")
+    print("ERROR - No se pudo conectar a la BD")
 
 
 ##############################
@@ -32,7 +32,7 @@ def get_some_users():
     except Exception as ex:
         print(ex)
         return Response(
-            response=json.dumps({"message": "cannot read users"}),
+            response=json.dumps({"message": "No se pueden leer usuarios"}),
             status=500,
             mimetype="application/json"
         )
@@ -52,7 +52,7 @@ def create_user():
         #     print(attr)
         return Response(
             response=json.dumps(
-                {"message": "user created",
+                {"message": "Usuario Creado",
                  "id": f"{dbResponse.inserted_id}"
                  }),
             status=200,
@@ -80,14 +80,14 @@ def update_user(id):
         if dbResponse.modified_count == 1:
             return Response(
                 response=json.dumps(
-                    {"message": "user updated"}),
+                    {"message": "Usuario actualizado"}),
                 status=200,
                 mimetype="application/json"
             )
         else:
             return Response(
                 response=json.dumps(
-                    {"message": "no needed to updated"}),
+                    {"message": "No es necesario actualizar"}),
                 status=200,
                 mimetype="application/json"
             )
@@ -98,7 +98,7 @@ def update_user(id):
         print("*********************")
         return Response(
             response=json.dumps(
-                {"message": "sorry cannot update user"}),
+                {"message": "Perdón, no se puede actualizar el usuario"}),
             status=500,
             mimetype="application/json"
         )
@@ -112,14 +112,14 @@ def delete_user(id):
         if dbResponse.deleted_count == 1:
             return Response(
                 response=json.dumps(
-                    {"message": "user deleted", "id": f"{id}"}),
+                    {"message": "Usuario eliminado", "id": f"{id}"}),
                 status=200,
                 mimetype="application/json"
             )
         else:
             return Response(
                 response=json.dumps(
-                    {"message": "user not found", "id": f"{id}"}),
+                    {"message": "Usuario no encontrado", "id": f"{id}"}),
                 status=200,
                 mimetype="application/json"
             )
@@ -131,7 +131,7 @@ def delete_user(id):
         print("*********************")
         return Response(
             response=json.dumps(
-                {"message": "sorry cannot delete user"}),
+                {"message": "Perdón, no se puede eliminar el usuario"}),
             status=500,
             mimetype="application/json"
         )
