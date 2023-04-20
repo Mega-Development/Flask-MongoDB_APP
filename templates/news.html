@@ -1,0 +1,177 @@
+{% extends "layout.html" %} {% block title %} Noticias {% endblock %} {% block content%}
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Noticias</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Si quieres estar al día de las más recientes noticias, estás en el lugar correcto.</p>
+        </div>
+    </div>
+</header>
+<!-- Page Content-->
+<section class="py-5">
+    <div class="container px-5">
+        <h1 class="fw-bolder fs-5 mb-4">Noticias más recientes</h1>
+        <div class="card border-0 shadow rounded-3 overflow-hidden">
+            <div class="card-body p-0">
+                <div class="row gx-0">
+                    <div class="col-lg-6 col-xl-5 py-lg-5">
+                        <div class="p-4 p-md-5">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticias</div>
+                            <div class="h2 fw-bolder">La película protagonizada por Will Smith, ha sido un rotundo éxito</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus ab doloremque, qui doloribus ea officiis...</p>
+                            <a class="stretched-link text-decoration-none" href="#!">
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="bg-featured-blog" style="background-image: url('static/img/mosaico2.png')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light">
+    <div class="container px-5">
+        <div class="row gx-5">
+            <div class="col-xl-8">
+                <h2 class="fw-bolder fs-5 mb-4">Noticias</h2>
+                <!-- News item-->
+                <div class="mb-4">
+                    <div class="small text-muted">10 de Agosto de 2022</div>
+                    <a class="link-dark" href="#!">
+                        <h3>¿Afectarán los teléfonos en la salud? El Dr. Kansanzky nos comenta al respecto en la siguiente nota</h3>
+                    </a>
+                </div>
+                <!-- News item-->
+                <div class="mb-5">
+                    <div class="small text-muted">11 de Agosto de 2022</div>
+                    <a class="link-dark" href="#!">
+                        <h3>La FIFA ha comunicado que el mundial empezará un día antes</h3>
+                    </a>
+                </div>
+                <!-- News item-->
+                <div class="mb-5">
+                    <div class="small text-muted">12 de Agosto de 2022</div>
+                    <a class="link-dark" href="#!">
+                        <h3>Descubra cuáles son las profesiones mejores pagadas del momento</h3>
+                    </a>
+                </div>
+                <div class="text-end mb-5 mb-xl-0">
+                    <a class="text-decoration-none" href="#!">
+                        Más noticias
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="card border-0 h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="h6 fw-bolder">Contacto</div>
+                                <p class="text-muted mb-4">
+                                    Para consultas de noticias, contáctanos a
+                                    <br />
+                                    <a href="#!">sistemasoperativos@appflask.com</a>
+                                </p>
+                                <div class="h6 fw-bolder">Síguenos</div>
+                                <a class="fs-5 px-2 link-dark" href="#"><i class="bi-twitter"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#"><i class="bi-facebook"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#"><i class="bi-linkedin"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#"><i class="bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog preview section-->
+<section class="py-5">
+    <div class="container px-5">
+        <h2 class="fw-bolder fs-5 mb-4">Artículos Destacados</h2>
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/img/mosaico2.png" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticias</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="#!">
+                            <div class="h5 card-title mb-3">El estresante camino del estudiante de Ingeniería de Sistemas</div>
+                        </a>
+                        <p class="card-text mb-0">Nunca hemos contemplado el cómo un estudiante se esfuerza más allá de sus limitantes, algunos estudiosos han hecho la evaluación del estrés que esto conlleva.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                <div class="small">
+                                    <div class="fw-bold">Kelly Rowan</div>
+                                    <div class="text-muted">13 de agosto &middot; Lectura 6 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/img/mosaico2.png" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Tecnología</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="#!">
+                            <div class="h5 card-title mb-3">AMD vs Intel</div>
+                        </a>
+                        <p class="card-text mb-0">A lo alrgo del tiempo hemos visto la experiencia que tiene Intel con sus procesadores, pero una de las companías que en los últimos años le ha hecho competencia es AMD con su línea Ryzen.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                <div class="small">
+                                    <div class="fw-bold">Josiah Barclay</div>
+                                    <div class="text-muted">13 de agosto &middot; Lectura 4 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="static/img/mosaico2.png" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticias</div>
+                        <a class="text-decoration-none link-dark stretched-link" href="#!">
+                            <div class="h5 card-title mb-3">El virus del mono ha estremecido al mundo</div>
+                        </a>
+                        <p class="card-text mb-0">Algunas de las investigaciones más recientes sugieren que el virus del mono es letal.</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                <div class="small">
+                                    <div class="fw-bold">Evelyn Martinez</div>
+                                    <div class="text-muted">13 de agosto &middot; Lectura 10 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mb-5 mb-xl-0">
+            <a class="text-decoration-none" href="#!">
+                Más historias
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock%}

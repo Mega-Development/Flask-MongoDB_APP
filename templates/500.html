@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block title %}Error Interno del Servidor{% endblock %}
+{% block content %}
+<h1>Error Interno del Servidor</h1>
+<p>Oops... nosotros hemos cometido un error, disculpa!</p>
+<p><a href="{{ url_for('home') }}">Vayamos a un lugar mejor...</a>
+{% endblock %}

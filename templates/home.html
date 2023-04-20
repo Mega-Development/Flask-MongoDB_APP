@@ -1,0 +1,98 @@
+{% extends "layout.html" %} {% block title %} Inicio {% endblock %} {% block content%}
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">FlaskApp + MongoDB, creado por Mega Development</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">Proyecto web creado con el fin de conocer otras formas de implementar páginas estáticas en la web, a través de python y con el framework Flask. Agregándole una BD NoSQL con MongoDB.
+                    </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Comenzar</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#!">Aprender Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="static/img/flask.png" alt="..." /></div>
+        </div>
+    </div>
+</header>
+<!-- Features section-->
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="fw-bolder mb-0">Una mejor forma de desarrollar.</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h5">Ventaja 1</h2>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis tenetur, dolores autem doloribus ducimus numquam, libero atque obcaecati, eligendi hic voluptatibus. Pariatur ullam illo, quisquam iste quos quibusdam saepe perspiciatis!</p>
+                    </div>
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h5">Ventaja 2</h2>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium nobis dolores voluptate. Totam voluptatum, nihil dolorem reiciendis minus explicabo quisquam labore doloremque tenetur, magni, eveniet harum. Delectus, molestiae.
+                            Quod!
+                        </p>
+                    </div>
+                    <div class="col mb-5 mb-md-0 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Ventaja 3</h2>
+                        <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia cumque vero natus ipsam incidunt, iste aliquam, ullam cupiditate repellat beatae veritatis nam facilis reiciendis enim nihil veniam ratione ab quasi?</p>
+                    </div>
+                    <div class="col h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Ventaja 4</h2>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate facere atque dolorem corrupti sint consequatur voluptate fugit earum accusamus? Possimus hic omnis nisi ullam recusandae rerum autem voluptas perspiciatis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial section-->
+<div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                    <div class="fs-4 mb-4 fst-italic">"Trabajar de forma adaptable con Python y con la flexibilidad que nos da este lenguaje, podemos generar grandes cosas; y una de ellas es la creación de páginas web!"
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="rounded-circle me-3 shadow" src="static/img/3.webp" style="width: 40px;" alt="CEO de empresa" />
+                        <div class="fw-bold">
+                            Ernesto Gutierrez
+                            <span class="fw-bold text-primary mx-1">/</span> CEO, FlaskApp
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog preview section-->
+<section class="py-5">
+    <div class="container px-5 my-5">
+        <!-- Call to action-->
+        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+            <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                <div class="mb-4 mb-xl-0">
+                    <div class="fs-3 fw-bold text-white">Nuestros servicios a tu disposición.</div>
+                    <div class="text-white-50">Suscríbete para recibir novedades de nuestros productos y ofertas.</div>
+                </div>
+                <div class="ms-xl-4">
+                    <div class="input-group mb-2">
+                        <input class="form-control" type="text" placeholder="Dirección de Correo..." aria-label="Dirección de correo..." aria-describedby="button-newsletter" />
+                        <button class="btn btn-outline-light" id="button-newsletter" type="button">Inscribirse</button>
+                    </div>
+                    <div class="small text-white-50">La privacidad es primero, nunca compartimos tu información.</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+{% endblock%}
